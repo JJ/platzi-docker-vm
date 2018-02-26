@@ -1,8 +1,7 @@
 ---
 - hosts: all
   gather_facts: False
-  roles:
-    - { role: name, become: yes}
+  become: true
   
   tasks:
     - name: install python 2
